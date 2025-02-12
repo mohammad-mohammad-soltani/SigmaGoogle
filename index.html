@@ -6,35 +6,37 @@
     <title>What Is Google</title>
 </head>
 <body>
-    <div class="flex">
-        <img src="google.png" width="50%"  alt="">
-    </div>
-    <h1>علامه گوگل چیست ؟</h1>
-    <p>علامه گوگل فردی است که تو میتوانی سوالات چرت و پرت خود را از آن بپرسی </p>
-    <h2>چگونه از این تکنولوژی فضایی استفاده بکنم؟</h2>
-    <p>ببین این خیلی چیز جدیدیه برای همین استفادش سخته . ولی تو میتونی به <a href="http://google.com"> google.com</a> بری داداش . فقط نگو بهش که من این اسرار رو برات فاش کردم</p>
-    <h2>این که خیلی سخته راحت ترشو بلد نیستی؟ </h2>
-    <p>چرا میتونی سوال چرت و پرتتو توی باکس زیر بنویسی</p>
-    <div class="flex">
-        <div class="flex_div">
-            <div id="search" class="search">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
-                    <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
-                </svg>
-            </div>
-            <input class="input" type="text">
+    <div class="main_box">
+        <div class="flex">
+            <img src="google.png" width="50%"  alt="">
         </div>
-    </div>
-    <section id="pop" style="display: none;" >
-       <div class="inner">
-            <div class="flex">
-                <img src="google.png" width="30%"  alt="">
+        <h1>علامه گوگل چیست ؟</h1>
+        <p>علامه گوگل فردی است که تو میتوانی سوالات چرت و پرت خود را از آن بپرسی </p>
+        <h2>چگونه از این تکنولوژی فضایی استفاده بکنم؟</h2>
+        <p>ببین این خیلی چیز جدیدیه برای همین استفادش سخته . ولی تو میتونی به <a href="http://google.com"> google.com</a> بری داداش . فقط نگو بهش که من این اسرار رو برات فاش کردم</p>
+        <h2>این که خیلی سخته راحت ترشو بلد نیستی؟ </h2>
+        <p>چرا میتونی سوال چرت و پرتتو توی باکس زیر بنویسی</p>
+        <div class="flex">
+            <div class="flex_div">
+                <div id="search" class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                        <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                    </svg>
+                </div>
+                <input class="input" type="text">
             </div>
-            <h2>شما تسخیر شدید</h2>
-            <p id="meme_box" >حتی گوگل هم نمیخاد به شما جواب بده</p>
-            <button id="close" class="close" >برام مهم نیست</button>
-       </div>
-    </section>
+        </div>
+        <section id="pop" style="display: none;" >
+           <div class="inner">
+                <div class="flex">
+                    <img src="google.png" width="30%"  alt="">
+                </div>
+                <h2>شما تسخیر شدید</h2>
+                <p id="meme_box" >حتی گوگل هم نمیخاد به شما جواب بده</p>
+                <button id="close" class="close" >برام مهم نیست</button>
+           </div>
+        </section>
+    </div>
     <style>
         body{
             background-color: rgb(26, 24, 24);
@@ -126,6 +128,19 @@
         .close:hover{
             color: orange;
             background-color: transparent;
+        }
+        @media screen and (min-width : 1000px){
+            .main_box{
+                width: 80%;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 0;
+                height: 100vh;
+            }
         }
 
     </style>
